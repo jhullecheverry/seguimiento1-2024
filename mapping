@@ -1,0 +1,5 @@
+import mapping.dtos.ToyStoreDTO;
+public class ToyStoreMapper {
+    public static Toy mapFrom(ToyStoreDTO toyStoreDTO){
+        return new Toy(toyStoreDTO.name(),toyStoreDTO.type(),toyStoreDTO.price(),toyStoreDTO.amount());
+    }
